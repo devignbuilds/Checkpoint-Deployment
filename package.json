@@ -1,0 +1,14 @@
+{
+  "name": "mern-task-app",
+  "version": "1.0.0",
+  "description": "MERN Stack Task Manager for Azure Deployment",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "postinstall": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
